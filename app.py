@@ -25,9 +25,6 @@ def clusterize(data):
     clustering = AgglomerativeClustering(n_clusters=None, distance_threshold=4.67, linkage="complete", metric='euclidean', compute_full_tree=True)
     clustering.fit(vectors)
 
-    linkage_matrix = np.column_stack([clustering.children_, clustering.distances_])
-    linkage_matrix = linkage(clustering.children_, method="complete", metric='euclidean')
-
     centroids = []
     for i in range(clustering.n_clusters_):
         cluster_points = vectors[clustering.labels_ == i]
