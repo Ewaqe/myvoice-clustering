@@ -1,0 +1,9 @@
+scikitlearn
+scipy
+autocorrect
+numpy
+flask
+navec
+git+https://github.com/Koziev/rulemma
+git+https://github.com/Koziev/rutokenizer
+git+https://github.com/Koziev/rupostagger
