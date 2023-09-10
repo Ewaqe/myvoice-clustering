@@ -1,4 +1,4 @@
-scikitlearn
+scikit-learn
 scipy
 autocorrect
 numpy
